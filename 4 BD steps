@@ -1,0 +1,19 @@
+Program-04:Implementing Rational Algorithm On Pig
+Step-1:start-all.sh
+Step-2:jps
+Step-3:pig -x local
+Step-4:Operations:
+1.A = Load '/home/sukcse/ss.txt using PigStorage(',') As(num1:int, num2:int, num3:int);
+    dump A;
+2.limited_val = LIMIT A 2;
+dump limited_val;
+3.Sorted = ORDER A by num3;
+dump Sorted;
+4.a)Grouped = GROUPED A by num3;
+dump Grouped;
+b)Grouped = GROUP A by (num2,num3);
+dump Grouped;
+5.a) Filtered = FILTER A by num3 > 30;
+dump Filtered;
+b)Filtered = FILTER A by (num3 > 30) AND (num2 > 5);
+dump Filtered;
