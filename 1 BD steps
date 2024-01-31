@@ -1,0 +1,8 @@
+Program-01:Installation Of Single Node Hadoop Structure
+Step 1:java -version
+Step 2:sudo adduser
+Step 3:password for sukcse: root@123
+Step 4:export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-and64
+Step 5:sudo gedit ~/.bashrc
+Step 6:ssh.keygen -t rsa
+Step 7:ls
